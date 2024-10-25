@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Pagina-1" id="-HLTAEP1n0g5KLYHytub">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--7" value="&lt;span class=&quot;fontstyle0&quot;&gt;Teken een klassediagramma van volgende opgave.&lt;p&gt;&lt;/p&gt;Een cinemagroep (zoals Kinepolis) beschikt over een aantal complexen. Elke cinemacomplex heeft een aantal zalen en elke zaal speelt een film gedurende een bepaalde periode.&lt;p&gt;&lt;/p&gt;De cinemagroep heeft een naam en een hoofdzetel op een bepaald adres. Je kan hier ook de cinemacomplexen in bewaren.&lt;p&gt;&lt;/p&gt;Elke cinemacomplex heeft een naam, een adres en een aantal zalen ter beschikking.&lt;/span&gt;&lt;p&gt;&lt;/p&gt;&lt;span class=&quot;fontstyle0&quot;&gt;Elke zaal heeft een nummer en een aantal zitplaatsen. Elke zaal speelt ook een film tussen bepaalde datums. Je mag er vanuit gaan dat er slechts 1 film gespeeld wordt per zaal.&lt;p&gt;&lt;/p&gt;Elke film heeft een naam, een lengte en een releasedatum.&lt;/span&gt; &#xa;&lt;br style=&quot;font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="560" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--8" value="Cinemacomplex" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="75" y="562" width="160" height="88" as="geometry">
+            <mxRectangle x="210" y="400" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--9" value="+ naam: string&lt;div&gt;+ adres: string&lt;/div&gt;&lt;div&gt;+ zalen: Zaal[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JBFw4_qFPOQmY7HvdQZ--8" vertex="1">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JBFw4_qFPOQmY7HvdQZ--8" vertex="1">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--16" value="Zaal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="567" width="160" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--17" value="+ nummer: int&lt;div&gt;+ zetels: int&lt;/div&gt;&lt;div&gt;+ film: Film&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JBFw4_qFPOQmY7HvdQZ--16" vertex="1">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JBFw4_qFPOQmY7HvdQZ--16" vertex="1">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--20" value="Film" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="557" width="160" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--21" value="+ naam: string&lt;br&gt;+ lengte: int&lt;br&gt;+ releaseDatum: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JBFw4_qFPOQmY7HvdQZ--20" vertex="1">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JBFw4_qFPOQmY7HvdQZ--20" vertex="1">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--24" value="CinemaGroep" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="320" width="230" height="88" as="geometry">
+            <mxRectangle x="210" y="400" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--25" value="+ naam: string&lt;div&gt;+ hoofdzetel: string&lt;/div&gt;&lt;div&gt;+ cinemaComplexen: Cinemacomplex[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JBFw4_qFPOQmY7HvdQZ--24" vertex="1">
+          <mxGeometry y="26" width="230" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JBFw4_qFPOQmY7HvdQZ--24" vertex="1">
+          <mxGeometry y="80" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--46" value="1" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--24" target="JBFw4_qFPOQmY7HvdQZ--8" edge="1">
+          <mxGeometry x="-0.7143" y="15" relative="1" as="geometry">
+            <mxPoint x="330" y="490" as="sourcePoint" />
+            <mxPoint x="490" y="490" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--47" value="1" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.396;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--9" target="JBFw4_qFPOQmY7HvdQZ--17" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="350" y="530" as="sourcePoint" />
+            <mxPoint x="510" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--51" value="1" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" parent="1" target="JBFw4_qFPOQmY7HvdQZ--21" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="590" y="611.24" as="sourcePoint" />
+            <mxPoint x="785" y="610.24" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--55" value="&lt;span class=&quot;fontstyle0&quot;&gt;Teken een use-case diagram van volgende opgave.&lt;p&gt;&lt;/p&gt;De cinemagroep heeft een CEO die kan beslissen welke complexen de groep koopt, verkoopt of renoveert. Daarnaast zijn er verschillende werknemers die bepalen welke films in welke zalen komen en tijdens welke periode elke film loopt.&lt;/span&gt; &#xa;&lt;br style=&quot;font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="720" width="560" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--86" value="&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;1..n&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="537" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--87" value="&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;1..n&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="399" y="590" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--88" value="&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;1..n&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="590" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--89" value="CEO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="840" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--91" value="Cinemacomplex&amp;nbsp;&lt;br&gt;Verkopen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="800" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--92" value="Cinemacomplex&amp;nbsp;&lt;br&gt;Kopen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="880" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--93" value="Cinemacomplex&amp;nbsp;&lt;br&gt;Renoveren" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="960" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--97" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--89" target="JBFw4_qFPOQmY7HvdQZ--91" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="880" as="sourcePoint" />
+            <mxPoint x="310" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--98" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--89" target="JBFw4_qFPOQmY7HvdQZ--92" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="65" y="880" as="sourcePoint" />
+            <mxPoint x="220" y="845" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--99" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--89" target="JBFw4_qFPOQmY7HvdQZ--93" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="75" y="890" as="sourcePoint" />
+            <mxPoint x="230" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--102" value="Werknemer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1080" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--103" value="Film Kiezen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="1040" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--104" value="Zaal Kiezen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="1120" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--105" value="Periode Kiezen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="1200" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--106" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--102" target="JBFw4_qFPOQmY7HvdQZ--103" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="1120" as="sourcePoint" />
+            <mxPoint x="310" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--107" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--102" target="JBFw4_qFPOQmY7HvdQZ--104" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="65" y="1120" as="sourcePoint" />
+            <mxPoint x="220" y="1085" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFw4_qFPOQmY7HvdQZ--108" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="JBFw4_qFPOQmY7HvdQZ--102" target="JBFw4_qFPOQmY7HvdQZ--105" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="75" y="1130" as="sourcePoint" />
+            <mxPoint x="230" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
